@@ -44,7 +44,8 @@ class Monster < Character
 
     def transform
       transform_name = 'ドラゴン'
-      
+
+      transform_message(origin_name: @name, transform_name: transform_name)
 
       @offense *= POWER_UP_RATE
       @name = transform_name
